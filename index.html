@@ -1,141 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student Portfolio</title>
-
-<style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family: Arial, sans-serif;
-    }
-
-    body{
-        background:#f4f4f4;
-    }
-
-    header{
-        background:#2c3e50;
-        color:white;
-        text-align:center;
-        padding:30px;
-    }
-
-    header img{
-        width:150px;
-        height:150px;
-        border-radius:50%;
-        border:4px solid white;
-        margin-bottom:10px;
-    }
-
-    section{
-        max-width:900px;
-        margin:20px auto;
-        background:white;
-        padding:20px;
-        border-radius:10px;
-        box-shadow:0 2px 8px rgba(0,0,0,0.2);
-    }
-
-    h2{
-        color:#2c3e50;
-        margin-bottom:10px;
-    }
-
-    ul{
-        padding-left:20px;
-    }
-
-    .skills span{
-        display:inline-block;
-        background:#3498db;
-        color:white;
-        padding:8px 15px;
-        margin:5px;
-        border-radius:20px;
-    }
-
-    footer{
-        text-align:center;
-        background:#2c3e50;
-        color:white;
-        padding:15px;
-        margin-top:20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suharshith Kamma | Portfolio</title>
+    <link rel="icon" type="image/png" href="portfolio-icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="https://via.placeholder.com/150" alt="Profile Photo">
-    <h1>Suharshith Kamma</h1>
-    <p>B.Tech Student | CSE Department</p>
-</header>
+    <div class="container">
+        
+        <aside class="left-panel">
+            
+            <div class="profile-info">
+                <h1 class="logo">Suharshith Kamma</h1>
+                <p class="subtitle">Aspiring Full Stack Web Developer</p>
+                <div class="profile-image-container">
+                    <img src="profile.jpeg" alt="Suharshith Kamma" class="profile-img">
+                </div>
+            </div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            
+            <label for="menu-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="#about" class="active">
+                            <svg viewBox="0 0 24 24" class="menu-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <svg viewBox="0 0 24 24" class="menu-icon"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <svg viewBox="0 0 24 24" class="menu-icon"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education">
+                            <svg viewBox="0 0 24 24" class="menu-icon"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                            Education
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <svg viewBox="0 0 24 24" class="menu-icon"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <footer class="panel-footer">
+                <p>&copy; 2026 Suharshith Kamma. All rights reserved.</p>
+            </footer>
+            
+        </aside>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science Engineering student passionate about
-        web development, programming, and problem solving. I enjoy
-        learning new technologies and working on innovative projects.
-    </p>
-</section>
+        <main class="right-panel">
+            
+            <section id="about">
+                <h2>About Me</h2>
+                
+                <div class="profile-image-container">
+                    <img src="profile.jpeg" alt="Suharshith Kamma" class="profile-img">
+                </div>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><b>B.Tech - Computer Science Engineering</b></li>
-        <li>College Name: Your College Name</li>
-        <li>Year: 2024 - 2028</li>
-        <li>CGPA: 8.5+</li>
-    </ul>
-</section>
+                <p>I am a second-year B.Tech engineering student focused on mastering the mechanics of full-stack software development. I am currently pursuing my Bachelor of Technology (B.Tech) in Computer Science and Engineering at Jawaharlal Nehru Technological University, Kakinada. Deeply invested in software engineering and computational logic, I bridge academic computer science principles with hands-on development, transforming complex logical problems into clean, scalable, and responsive digital tools.</p>
+            </section>
 
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Python</span>
-        <span>Java</span>
-        <span>SQL</span>
+            <section id="skills">
+                <h2>Technical Toolkit</h2>
+                <div class="skills-list">
+                    <div class="skill-row">
+                        <h3>Core Programming</h3>
+                        <ul>
+                            <li>Java <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon"></li>
+                            <li>Python <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon"></li>
+                            <li>C <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon"></li>
+                        </ul>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Frontend Engineering</h3>
+                        <ul>
+                            <li>HTML5 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon"></li>
+                            <li>CSS3 (Flexbox & Grid) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon"></li>
+                            <li>JavaScript <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon"></li>
+                        </ul>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Backend & Databases</h3>
+                        <ul>
+                            <li>PHP <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon"></li>
+                            <li>MySQL <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon"></li>
+                            <li>SQL <img src="https://clipground.com/images/active-directory-logo-1.png" alt="SQL" class="skill-icon"></li>
+                        </ul>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Version Control & Tools</h3>
+                        <ul>
+                            <li>Git <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon"></li>
+                            <li>GitHub <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+<section id="projects">
+    <h2>Selected Work</h2>
+    
+    <!-- Project 1: Learning Kit -->
+    <div class="project-row">
+        <div class="project-meta">May 2026</div>
+        <div class="project-details">
+            <!-- Unlinked, clean static header -->
+            <h3>Offline Learning Kit for Rural Students</h3>
+            <div class="project-tag">Design Thinking & Innovation Lab Project</div>
+            <p>Engineered a self-contained digital educational ecosystem tailored for student learning in resource-constrained, internet-isolated environments. Optimized the system specifications for efficient, localized deployment.</p>
+            
+            <!-- Technical Tool Pill Boxes Grid Layout -->
+            <div class="project-tech-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Offline Specs</span>
+            </div>
+            
+            <!-- Action Link Cluster (Blinking Navigation Mechanics) -->
+            <div class="project-action-links">
+                <a href="https://github.com/suharshith2006-afk/learnpath-hub" target="_blank" class="action-blink-link">GitHub ↗</a>
+                <a href="https://offlinedigitallearningkit.netlify.app/" target="_blank" class="action-blink-link">Live Demo ↗</a>
+            </div>
+        </div>
     </div>
+
+    <!-- Project 2: Fake Account Detector -->
+    <div class="project-row">
+        <div class="project-meta">March 2026</div>
+        <div class="project-details">
+            <!-- Unlinked, clean static header -->
+            <h3>Fake Account Detector in Social Media</h3>
+            <div class="project-tag">Capture The Flag(CTF) hackathon project</div>
+            <p>Developed an intelligent verification system that analyzes user behavioral patterns, profile metadata, and activity metrics to detect and flag automated bots and fraudulent accounts on social platforms.</p>
+            
+            <!-- Technical Tool Pill Boxes Grid Layout -->
+            <div class="project-tech-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">CSV</span>
+            </div>
+            
+            <!-- Action Link Cluster (Blinking Navigation Mechanics) -->
+            <div class="project-action-links">
+                <a href="https://github.com/suharshith2006-afk/FakeAccount-Detector" target="_blank" class="action-blink-link">GitHub ↗</a>
+                <a href="https://fakeaccount-detector.netlify.app/" target="_blank" class="action-blink-link">Live Demo ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3: HydroScan Water Analyzer -->
+<div class="project-row">
+    <div class="project-meta">June 2026</div>
+    <div class="project-details">
+        <!-- Unlinked, clean static header -->
+        <h3>HydroScan Water Analyzer</h3>
+        <div class="project-tag">IoT & Environmental Engineering Initiative</div>
+        <p>Engineered an intelligent water quality analysis application that processes parameter metrics and chemical data thresholds to scan, evaluate, and classify water safety levels for real-time contamination diagnostics.</p>
+        
+        <!-- Technical Tool Pill Boxes Grid Layout -->
+        <div class="project-tech-pills">
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Data Specs</span>
+        </div>
+        
+        <!-- Action Link Cluster (Blinking Navigation Mechanics) -->
+        <div class="project-action-links">
+            <a href="https://github.com/suharshith2006-afk/hydroscan-water-analyzer" target="_blank" class="action-blink-link">GitHub ↗</a>
+            <a href="https://hydroscan-water-analyzer.netlify.app/" target="_blank" class="action-blink-link">Live Demo ↗</a>
+        </div>
+    </div>
+</div>
 </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><b>Offline Learning Kit for Rural Students</b> - SDG 4 Quality Education Project.</li>
-        <li><b>API Key Leak Detection System</b> - Hackathon project for detecting exposed API keys.</li>
-        <li><b>Student Management System</b> - Database project using SQL.</li>
-    </ul>
-</section>
+            <section id="education">
+                <h2>Education</h2>
+                
+                <div class="education-row">
+                    <div class="education-meta">2024 — Present</div>
+                    <div class="education-details">
+                        <div class="edu-row-header">
+                            <div class="edu-field">
+                                <span class="edu-label">Qualification</span>
+                                <h3>B.Tech in Computer Science & Engineering</h3>
+                            </div>
+                            <div class="edu-field score-field">
+                                <span class="edu-label">Score</span>
+                                <p class="edu-score">8.80 CGPA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="edu-field">
+                            <span class="edu-label">Institute</span>
+                            <p class="edu-value-main">Jawaharlal Nehru Technological University Kakinada</p>
+                        </div>
+                    </div>
+                </div>
 
-<section>
-    <h2>Achievements</h2>
-    <ul>
-        <li>Participated in Hackathons and Coding Competitions.</li>
-        <li>Completed Internship Programs.</li>
-        <li>Active Member of Technical Events.</li>
-    </ul>
-</section>
+                <div class="education-row">
+                    <div class="education-meta">2022 — 2024</div>
+                    <div class="education-details">
+                        <div class="edu-row-header">
+                            <div class="edu-field">
+                                <span class="edu-label">Qualification</span>
+                                <h3>Intermediate Education (MPC)</h3>
+                            </div>
+                            <div class="edu-field score-field">
+                                <span class="edu-label">Score</span>
+                                <p class="edu-score">98.70%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="edu-field">
+                            <span class="edu-label">Institute</span>
+                            <p class="edu-value-main">Modern G.R.C Junior College</p>
+                        </div>
+                    </div>
+                </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: yourmail@example.com</p>
-    <p>Phone: +91 XXXXXXXXXX</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
-</section>
+                <div class="education-row">
+                    <div class="education-meta">2021 — 2022</div>
+                    <div class="education-details">
+                        <div class="edu-row-header">
+                            <div class="edu-field">
+                                <span class="edu-label">Qualification</span>
+                                <h3>Secondary School Certificate (SSC)</h3>
+                            </div>
+                            <div class="edu-field score-field">
+                                <span class="edu-label">Score</span>
+                                <p class="edu-score">90.67%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="edu-field">
+                            <span class="edu-label">Institute</span>
+                            <p class="edu-value-main">Sri Rajeev Gandhi Mpl High School</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<footer>
-    <p>© 2026 Suharshith Kamma | Student Portfolio</p>
-</footer>
+            <section id="contact">
+                <h2>Contact & Inquiries</h2>
 
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name" required
+                               title="Please enter full name"
+                               oninvalid="this.setCustomValidity('Please enter full name')"
+                               oninput="this.setCustomValidity('')">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required
+                               title="Please enter valid mail address"
+                               oninvalid="this.setCustomValidity('Please enter valid mail address')"
+                               oninput="this.setCustomValidity('')">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="mobileNumber" placeholder="Mobile Number" required
+                               title="Please enter valid mobile number"
+                               oninvalid="this.setCustomValidity('Please enter valid mobile number')"
+                               oninput="this.setCustomValidity('')">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required
+                                  title="Enter your message"
+                                  oninvalid="this.setCustomValidity('Enter your message')"
+                                  oninput="this.setCustomValidity('')"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <p id="formError" class="error-msg" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <footer class="main-footer">
+                <div class="footer-links">
+                    <a href="mailto:suharshith2006@gmail.com" class="social-icon-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" class="social-svg">
+                            <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/kamma-suharshith-246221322?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" class="social-svg">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/suharshith2006-afk" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
+                        <svg class="social-svg" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://leetcode.com/u/suharshith999/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LeetCode">
+                        <svg class="social-svg" viewBox="0 0 24 24">
+                            <path d="M13.483 0a1.374 1.374 0 0 0-.961.411L7.11 5.826a1.374 1.374 0 0 0-.013 1.945c.47.47 1.243.466 1.707-.007l5.406-5.414a.344.344 0 0 1 .494 0l6.816 6.816a.344.344 0 0 1 0 .494l-8.508 8.514a.344.344 0 0 1-.494 0L6.23 11.844a.344.344 0 0 1 0-.494l1.326-1.327a1.21 1.21 0 0 0-.126-1.83 1.211 1.211 0 0 0-1.585.13L3.921 10.25a1.374 1.374 0 0 0 0 1.946l6.816 6.816a1.374 1.374 0 0 0 1.946 0l8.507-8.514a1.374 1.374 0 0 0 0-1.946L14.444.411A1.374 1.374 0 0 0 13.483 0zm-7.9 14.181a1.211 1.211 0 0 0-1.584.131L.412 17.9a1.374 1.374 0 0 0 0 1.946l2.131 2.131a1.374 1.374 0 0 0 1.946 0l3.587-3.587a1.211 1.211 0 0 0-.126-1.83 1.211 1.211 0 0 0-2.367-.379z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://instagram.com/suharshith_999" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" class="social-svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
+            
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
