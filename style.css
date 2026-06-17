@@ -25,21 +25,19 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Master Grid Layout */
+
 .container {
     display: flex;
     min-height: 100vh;
 }
 
-/* ==========================================================================
-   DESKTOP MASTER FIXES: HIDE MOBILE BUTTONS & INITIALIZE CHECKBOX
-   ========================================================================== */
+
 .menu-checkbox, 
 .hamburger-btn {
     display: none; 
 }
 
-/* Left Panel: Fixed & Sticky Layout */
+
 .left-panel {
     width: 37%;
     height: 100vh;           
@@ -63,9 +61,7 @@ body {
     margin-bottom: 4px; 
 }
 
-/* ==========================================================================
-   1. UNIQUE DELAYED ARRIVAL TYPEWRITER REVEAL FOR SUB-NAME
-   ========================================================================== */
+
 .left-panel .subtitle {
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
     color: var(--text-main);
@@ -115,9 +111,6 @@ body {
     50% { border-right-color: transparent; }
 }
 
-/* ==========================================================================
-   2. PROFILE IMAGE CONFIGURATIONS (Desktop & Base Settings)
-   ========================================================================== */
 .profile-info {
     display: flex;
     flex-direction: column;
@@ -161,9 +154,7 @@ body {
     }
 }
 
-/* ==========================================================================
-   3. MENU BUTTONS BASE STYLES
-   ========================================================================== */
+
 .main-nav {
     width: 100%;
     max-width: 220px; 
@@ -246,9 +237,7 @@ body {
     transform-origin: top;
 }
 
-/* ==========================================================================
-   4. PANEL FOOTER
-   ========================================================================== */
+
 .panel-footer {
     color: #e7c08c;
     font-size: 0.8rem;
@@ -269,9 +258,6 @@ body {
     padding: 80px 8% 80px 8%;
 }
 
-/* ==========================================================================
-   MAIN CONTENT SECTIONS SPACING
-   ========================================================================== */
 section {
     scroll-margin-top: 40px;
     padding-bottom: 100px;  
@@ -300,9 +286,7 @@ section p {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* ==========================================================================
-   TECHNICAL TOOLKIT SPACING
-   ========================================================================== */
+
 .skill-row {
     display: flex;
     flex-direction: column;
@@ -345,9 +329,6 @@ section p {
     display: block;
 }
 
-/* ==========================================================================
-   SELECTED WORK SPACING
-   ========================================================================== */
 .project-row {
     display: flex;
     padding: 30px 0;        
@@ -410,9 +391,7 @@ section p {
     line-height: 1.6;
 }
 
-/* ==========================================================================
-   PROJECT HEADING BLINKING LINKS + TOOLTIP BADGE
-   ========================================================================== */
+
 .project-link {
     animation: linkBlink 1.2s ease-in-out infinite; 
     transition: color 0.2s ease-in-out;
@@ -459,9 +438,7 @@ section p {
     transform: translateX(0);
 }
 
-/* ==========================================================================
-   EDUCATION SECTION SPACING
-   ========================================================================== */
+
 .education-row {
     display: flex;
     padding: 35px 0;        
@@ -560,9 +537,7 @@ section p {
     }
 }
 
-/* ==========================================================================
-   CONTACT FORM SPACING
-   ========================================================================== */
+
 #contact form {
     margin-top: 10px;       
 }
@@ -586,9 +561,6 @@ form input::placeholder, form textarea::placeholder {
     color: rgba(255,255,255,0.15);
 }
 
-/* ==========================================================================
-   CONTACT FORM SUBMIT BUTTON UPGRADE (ARROW-FREE CAPSULE)
-   ========================================================================== */
 .submit-btn {
     background: transparent;
     border: 1px solid var(--accent-color);
@@ -623,9 +595,7 @@ form input::placeholder, form textarea::placeholder {
     font-weight: bold;
 }
 
-/* ==========================================================================
-   GLOBAL FOOTER & SOCIAL ICONS
-   ========================================================================== */
+
 .main-footer {
     padding: 20px 0 40px 0;   
     display: flex;
@@ -652,9 +622,7 @@ form input::placeholder, form textarea::placeholder {
     }
 }
 
-/* ==========================================================================
-   7. REFACTORED PREMIUM MOBILE MEDIA QUERY ENHANCEMENTS
-   ========================================================================== */
+
 @media (max-width: 900px) {
     .menu-checkbox {
         display: none !important;
@@ -896,9 +864,6 @@ form input::placeholder, form textarea::placeholder {
     }
 }
 
-/* ==========================================================================
-   AUTOMATIC CASCADING LOOP SOCIAL ICONS ENGINE (FAST REST + GLOW UPGRADE)
-   ========================================================================== */
 .social-icon-link {
     display: inline-flex;
     align-items: center;
@@ -936,9 +901,6 @@ form input::placeholder, form textarea::placeholder {
     filter: drop-shadow(0 0 8px rgba(231, 192, 140, 0.5)) brightness(1.2); 
 }
 
-/* ==========================================================================
-   UPDATED: STRUCTURAL PROJECT TECH PILLS & BLINK ACTION ROW SETUP
-   ========================================================================== */
 .project-details h3 {
     font-size: 1.3rem;
     font-weight: 500;
@@ -1006,9 +968,6 @@ form input::placeholder, form textarea::placeholder {
 .project-link::after { display: none !important; }
 
 
-/* ==========================================================================
-   UPDATED: PROFILE PORTRAIT COMPONENT ENHANCED INTENSITY BACKLIGHT
-   ========================================================================== */
 .left-panel {
     border-right: 1px solid var(--border-color);
     background: radial-gradient(circle at 50% 32%, #634f3f 0%, #42352a 55%, #1c1510 100%) !important;

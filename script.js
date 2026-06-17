@@ -1,19 +1,15 @@
-/* ==========================================================================
-   PORTFOLIO INTERACTIVE MASTER ENGINE (Navigation, Scroll & Form Validation)
-   ========================================================================== */
+
 
 document.addEventListener("DOMContentLoaded", () => {
     
-    // ==========================================================================
-    // 1. INTERACTIVE NAVIGATION & MOBILE AUTO-CLOSE SYSTEM
-    // ==========================================================================
+   
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".main-nav ul li a");
     const menuCheckbox = document.getElementById("menu-toggle");
 
-    // Tracks user scroll positions and highlights the active section link in real-time
+    
     const changeActiveLink = () => {
-        let scrollPosition = window.scrollY + 200; // Cushion offset so updates feel snappy
+        let scrollPosition = window.scrollY + 200; 
 
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
